@@ -4,8 +4,9 @@
     "module": "commonjs",
     "lib": ["dom", "es2015", "es6", "es2017", "esnext.asynciterable"],
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "./lib",
     "moduleResolution": "node",
+    "declaration": true,
 
     "removeComments": true,
     "noImplicitAny": true,
