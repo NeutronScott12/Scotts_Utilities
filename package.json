@@ -1,0 +1,29 @@
+{
+  "name": "Scotts_Utilities",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "delete-build": "rimraf ./dist",
+    "build": "cross-env npm run delete-build && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.4.0",
+    "logform": "^1.10.0",
+    "nodemailer": "^4.7.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^8.3.0",
+    "@types/nodemailer": "^4.6.5",
+    "@types/nodemailer-direct-transport": "^1.0.31",
+    "@types/nodemailer-smtp-transport": "^2.7.4",
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.2"
+  }
+}
