@@ -33,6 +33,8 @@
     "license": "ISC",
     "dependencies": {
         "bcryptjs": "^2.4.3",
+        "glob": "^7.1.3",
+        "graphql-tools": "^4.0.3",
         "jsonwebtoken": "^8.4.0",
         "logform": "^1.10.0",
         "nodemailer": "^4.7.0",
@@ -40,6 +42,7 @@
     },
     "devDependencies": {
         "@types/bcryptjs": "^2.4.2",
+        "@types/glob": "^7.1.1",
         "@types/jest": "^23.3.10",
         "@types/jsonwebtoken": "^8.3.0",
         "@types/nodemailer": "^4.6.5",
