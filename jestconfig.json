@@ -1,4 +1,7 @@
 {
+    "moduleDirectories": ["node_modules"],
+    "coveragePathIgnorePatterns": ["/node_modules/", "/lib"],
+    "testPathIgnorePatterns": ["/lib"],
     "transform": {
         "^.+\\.(t|j)sx?$": "ts-jest"
     },
