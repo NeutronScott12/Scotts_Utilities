@@ -5,13 +5,13 @@ export const createToken = (
     data: string | {} | [],
     secret: string,
     expiresIn: string | number,
-    refreshSecret: string,
-    refreshData: string | {} | [],
+    refreshSecret?: string,
+    refreshData?: string | {} | [],
 ): string | string[] => {
     try {
         const token = sign(data, secret, { expiresIn })
 
-        if (refreshSecret) {
+        if (refreshSecret && refreshData) {
             const refreshToken: string = sign(refreshData, refreshSecret, {
                 expiresIn: '7d',
             })
