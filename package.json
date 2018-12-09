@@ -8,7 +8,7 @@
 	"scripts": {
 		"version": "npm run format && git add -A src",
 		"postversion": "git push && git push --tags",
-		"prepublish": "npm test",
+		"prepare": "npm test",
 		"delete-build": "rimraf ./lib",
 		"build": "cross-env npm run delete-build && npm run test && tsc",
 		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
