@@ -1,6 +1,5 @@
 import winston = require('winston')
 import * as glob from 'glob'
-import * as path from 'path'
 import { IResolvers } from 'graphql-tools/dist/Interfaces'
 
 import { logger } from '..'

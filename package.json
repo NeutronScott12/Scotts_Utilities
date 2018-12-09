@@ -1,60 +1,56 @@
 {
-    "name": "Scotts_Utilities",
-    "version": "0.0.1",
-    "description": "",
-    "files": [
-        "lib/**/*"
-    ],
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
-    "scripts": {
-        "version": "npm run format && git add -A src",
-        "postversion": "git push && git push --tags",
-        "preversion": "npm run lint",
-        "prepublish": "npm test && npm run lint",
-        "delete-build": "rimraf ./lib",
-        "build": "cross-env npm run delete-build && tsc",
-        "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-        "lint": "tslint -p tsconfig.json",
-        "test": "jest --config jestconfig.json"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/OGNeutron/Scotts_Utilities"
-    },
-    "bugs": {
-        "url": "https://github.com/OGNeutron/Scotts_Utilities/issues"
-    },
-    "keywords": [
-        "Scotts Utilities",
-        "Common functions"
-    ],
-    "author": "Scott",
-    "license": "ISC",
-    "dependencies": {
-        "bcryptjs": "^2.4.3",
-        "glob": "^7.1.3",
-        "graphql-tools": "^4.0.3",
-        "jsonwebtoken": "^8.4.0",
-        "logform": "^1.10.0",
-        "nodemailer": "^4.7.0",
-        "winston": "^3.1.0"
-    },
-    "devDependencies": {
-        "@types/bcryptjs": "^2.4.2",
-        "@types/glob": "^7.1.1",
-        "@types/jest": "^23.3.10",
-        "@types/jsonwebtoken": "^8.3.0",
-        "@types/nodemailer": "^4.6.5",
-        "@types/nodemailer-direct-transport": "^1.0.31",
-        "@types/nodemailer-smtp-transport": "^2.7.4",
-        "cross-env": "^5.2.0",
-        "jest": "^23.6.0",
-        "prettier": "^1.15.3",
-        "rimraf": "^2.6.2",
-        "ts-jest": "^23.10.5",
-        "tslint": "^5.11.0",
-        "tslint-config-prettier": "^1.17.0",
-        "typescript": "^3.2.1"
-    }
+	"name": "Scotts_Utilities",
+	"version": "0.0.1",
+	"description": "",
+	"files": [ "lib/**/*" ],
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"version": "npm run format && git add -A src",
+		"postversion": "git push && git push --tags",
+		"prepublish": "npm test",
+		"delete-build": "rimraf ./lib",
+		"build": "cross-env npm run delete-build && npm run test && tsc",
+		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+		"lint": "tslint -p tsconfig.json",
+		"test": "jest --config jestconfig.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/OGNeutron/Scotts_Utilities"
+	},
+	"bugs": {
+		"url": "https://github.com/OGNeutron/Scotts_Utilities/issues"
+	},
+	"keywords": [ "Scotts Utilities", "Common functions" ],
+	"author": "Scott",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"glob": "^7.1.3",
+		"graphql": "^14.0.2",
+		"graphql-tools": "^4.0.3",
+		"jsonwebtoken": "^8.4.0",
+		"logform": "^1.10.0",
+		"nodemailer": "^4.7.0",
+		"winston": "^3.1.0"
+	},
+	"devDependencies": {
+		"@types/bcryptjs": "^2.4.2",
+		"@types/glob": "^7.1.1",
+		"@types/graphql": "^14.0.3",
+		"@types/jest": "^23.3.10",
+		"@types/jsonwebtoken": "^8.3.0",
+		"@types/nodemailer": "^4.6.5",
+		"@types/nodemailer-direct-transport": "^1.0.31",
+		"@types/nodemailer-smtp-transport": "^2.7.4",
+		"cross-env": "^5.2.0",
+		"jest": "^23.6.0",
+		"prettier": "^1.15.3",
+		"rimraf": "^2.6.2",
+		"ts-jest": "^23.10.5",
+		"tslint": "^5.11.0",
+		"tslint-config-prettier": "^1.17.0",
+		"typescript": "^3.2.1"
+	}
 }
