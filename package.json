@@ -1,5 +1,5 @@
 {
-	"name": "Scotts_Utilities",
+	"name": "scotts_utilities",
 	"version": "0.0.1",
 	"description": "",
 	"files": [ "lib/**/*" ],
