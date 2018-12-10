@@ -2,15 +2,13 @@
 	"name": "scotts_utilities",
 	"version": "0.0.3",
 	"description": "",
-	"files": [
-		"lib/**/*"
-	],
+	"files": [ "lib/**/*" ],
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
 	"scripts": {
 		"version": "npm run format && git add -A src",
 		"postversion": "git push && git push --tags",
-		"prepare": "npm test",
+		"prepare": "npm run build",
 		"delete-build": "rimraf ./lib",
 		"build": "cross-env npm run delete-build && npm run test && tsc",
 		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
@@ -24,10 +22,7 @@
 	"bugs": {
 		"url": "https://github.com/OGNeutron/Scotts_Utilities/issues"
 	},
-	"keywords": [
-		"Scotts Utilities",
-		"Common functions"
-	],
+	"keywords": [ "Scotts Utilities", "Common functions" ],
 	"author": "Scott",
 	"license": "ISC",
 	"dependencies": {
