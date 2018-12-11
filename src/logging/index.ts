@@ -1,17 +1,15 @@
-import * as winston from 'winston'
-import * as logform from 'logform'
+import * as winston from 'winston';
+import * as logform from 'logform';
 
-const { combine, timestamp, label, printf } = logform.format
+const { combine, timestamp, label, prettyPrint } = logform.format;
 
 export const logger = (loggerLabel: string): winston.Logger => {
-    return winston.createLogger({
-        format: combine(
-            label({ loggerLabel }),
-            timestamp(),
-            printf(({ timestamp, label, level, message }) => {
-                return `${timestamp} [${label}] ${level}: ${message}`
-            }),
-        ),
-        transports: [new winston.transports.Console()],
-    })
-}
+	// const myFormat = printf((info) => {
+	// 	return `${info.timestamp} [${info.label}] ${info.level}: ${info.message}`;
+	// });
+
+	return winston.createLogger({
+		format: combine(label({ loggerLabel }), timestamp(), prettyPrint()),
+		transports: [ new winston.transports.Console() ]
+	});
+};
