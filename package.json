@@ -2,9 +2,7 @@
 	"name": "scotts_utilities",
 	"version": "0.0.8",
 	"description": "",
-	"files": [
-		"lib/**/*"
-	],
+	"files": [ "lib/**/*" ],
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
 	"scripts": {
@@ -24,10 +22,7 @@
 	"bugs": {
 		"url": "https://github.com/OGNeutron/Scotts_Utilities/issues"
 	},
-	"keywords": [
-		"Scotts Utilities",
-		"Common functions"
-	],
+	"keywords": [ "Scotts Utilities", "Common functions" ],
 	"author": "Scott",
 	"license": "ISC",
 	"dependencies": {
