@@ -1,5 +1,5 @@
 describe('Image upload tests', () => {
-	test('Basic test', () => {
-		expect(1).toBe(1);
-	});
-});
+    test('Basic test', () => {
+        expect(1).toBe(1)
+    })
+})
