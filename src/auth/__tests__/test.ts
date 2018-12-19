@@ -14,7 +14,7 @@ describe('Auth Tests', () => {
     })
 
     test('Create Token and verify it', () => {
-        const token = createToken('stuff', 'secret', '7d')
+        const token = createToken('stuff', 'secret', { expiresIn: '7d' })
 
         if (typeof token === 'string') {
             expect(verifyToken(token, 'secret')).toBe('stuff')
