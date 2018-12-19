@@ -29,7 +29,7 @@ describe('Auth Tests', () => {
                 id: 1,
             },
             'secret',
-            '7d',
+            { expiresIn: '7d' },
         )
 
         const decode: any = decodeToken(token)
