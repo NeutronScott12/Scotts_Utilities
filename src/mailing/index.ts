@@ -30,9 +30,7 @@ export const generateEmailLink = async (
 			{ expiresIn: '7d' }
 		);
 
-		const link: string = `${clientUrl}?t=${token}`;
-
-		return link;
+		return `${clientUrl}?t=${token}`;
 	} catch (error) {
 		logger('Generate Email Confirmation').error({
 			level: '5',
@@ -64,7 +62,7 @@ export const SendMail = (
 			} as any
 		);
 
-		transport.sendMail(email);
+        transport.sendMail(email);
 
 		return true;
 	} catch (error) {
@@ -74,8 +72,7 @@ export const SendMail = (
 	}
 };
 
-// const {
-// 	EMAIL_HOST = 'smtp.mailtrap.io',
+
 // 	EMAIL_PORT = 2525,
 // 	EMAIL_USER = '984C1182cd3546',
 // 	EMAIL_PASS = 'c468fcdc66d05b'
